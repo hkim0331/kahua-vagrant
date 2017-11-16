@@ -1,12 +1,29 @@
 # kahua-vagrant
 
-vagrant で kahua を動かす。
+vagrant で kahua examples を試す。ポートは 8888。
+/vagrant 以下にソケットを作れないそうなので、/tmp/kahua にシンボリックリンク。
 
-* git clone https://github.com/kahua/Kahua.git
-* vagrant の起動
-* 8888 の転送、
-* kahua install に必要な gauche, gauche-dev, autoconf, make をインストール。
-* Kahua ソースのクローン
-* ソケットの位置を変更 /vagrant は使えない。
+さばけない卒論生のために。
+
+## require
+
+* vagrant
+* virtualbox
+
+## usage
+
+このディレクトリに cd して、
+
+macos$ vagrant up
+macos$ vagrant ssh
+
+vagrant> cd /vagrant
+vagrant> sh install.sh
+vagrant> sh start.sh
+
+---
+hiroshi . kimura . 0331 @ gmail . com
+
+
 
 

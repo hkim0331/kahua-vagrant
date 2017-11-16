@@ -1,5 +1,4 @@
 #!/bin/sh
-
 git clone https://github.com/kahua/Kahua.git
 
 cd Kahua
